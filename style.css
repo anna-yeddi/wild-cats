@@ -1,0 +1,92 @@
+body {
+    background: #080404;
+    color: #c9c9c9;
+    margin: 0 auto;  
+    width: 100vw; 
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .5px;
+    font-size: .9rem;
+    font-weight: 200;
+}
+.container {
+    display: flex;
+    flex: row wrap;
+    width: 95vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabs {
+    width: 20vw;
+    min-width: 10rem;
+    flex: 1 1 auto;
+}
+p {
+    display: inline-flex;
+    padding: .8rem;
+}
+p.active{
+    background: #c9c9c9;
+    color: #080404;
+}
+div.tabs__content {
+    display: none;
+}
+div.tabs__content.active {
+    display: block;
+}
+.galleria {
+    flex: 3 1 auto;
+    width: 70vw;
+    height: 95vh;
+    min-width: 300px;
+    background: #080808;
+}
+
+/* For the Wraparound Progress Bar */
+
+body {
+    height: 4000px;
+}
+
+/* Progress */
+.progress-top,
+.progress-right,
+.progress-bottom,
+.progress-left {
+  position: fixed;
+  z-index: 999;
+
+  background-color: #c9c9c9;
+}
+
+.progress-top,
+.progress-bottom {
+  height: 0.35rem;
+}
+
+.progress-right,
+.progress-left {
+  width: 0.35rem;
+}
+
+.progress-top,
+.progress-right {
+  top: 0;
+}
+
+.progress-top,
+.progress-left {
+  left: 0;
+}
+
+.progress-bottom,
+.progress-left {
+  bottom: 0;
+}
+
+.progress-bottom,
+.progress-right {
+  right: 0;
+}
